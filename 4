@@ -1,0 +1,2 @@
+select count (*) as DISTINCT_PLAY_COUNT,count(*) as CLIENT_COUNT from (SELECT distinct SONG_ID,CLIENT_ID FROM yasin.play where PLAY_TS like
+'10.08.2016%') as newPlay GROUP BY newPlay.CLIENT_ID
